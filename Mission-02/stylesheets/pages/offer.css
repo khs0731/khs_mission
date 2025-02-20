@@ -1,62 +1,75 @@
 /* 오늘의 쇼핑 제안 */
-body {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 * {
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
 header {
   width: 1022px;
   height: 40px;
   margin-top: 100px;
 }
+h1,
 #header_link {
   display: block;
   width: 100%;
-  margin-top: 0px;
+  margin: 0px;
 }
 #coupang_logo {
   width: 176px;
   height: 40px;
 }
+
+/* 섹션 시작*/
+
 section {
   width: 1022px;
   height: 354px;
-  position: absolute;
-  top: 188px;
+  margin-top: 48px;
+  border: solid 1px violet;
 }
 
 #today_shopping_header {
   width: 234px;
   height: 30px;
+  background-image: url('../../assets/icon/shopping.svg');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
 }
 
 h2 {
   margin: 0px;
   font-size: 24px;
   line-height: 115%;
-  font-weight: 400;
-
-  background-image: url('./icon/shopping.svg');
-  background-size: 24px 24px;
+  font-weight: 500;
+  margin-left: 30px;
 }
+
+/**/
+
 #today_shopping_frame {
   width: 1020px;
   height: 270px;
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
 }
+
 .today_shopping_item_box {
   width: 200px;
   height: 270px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid blue;
+  gap: 12px;
 }
 .product_img {
   width: 160px;
@@ -65,11 +78,29 @@ h2 {
 }
 .today_shopping_item_description {
   width: 172px;
+  border: solid 1px red;
 }
 .product_name {
   font-size: 14px;
   line-height: 120%;
-  border: solid 1px red;
+  margin-bottom: 12px;
+}
+.delivery {
+}
+
+.star_rating {
+  background-image: url('../../assets/sprites/rating-stars.png');
+  width: 68px;
+  height: 12px;
+  display: inline-block;
+  background-position-y: 24px;
+}
+.review_number {
+  color: var(--color-gray-700);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
 }
 .discount {
   width: 53px;
