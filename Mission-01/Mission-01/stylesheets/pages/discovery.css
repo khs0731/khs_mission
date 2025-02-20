@@ -1,0 +1,128 @@
+/* CSS 작성 */
+header {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin: 0;
+  width: 1020px;
+  margin-top: 100px;
+  margin-bottom: 56px;
+}
+#logo {
+  width: 176px;
+  height: 40px;
+  left: 0px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#today_discovery_container {
+  width: 1020px;
+  height: 28px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+#today_discovery,
+#today_discovery_discription,
+#bar {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+}
+
+#today_discovery_discription {
+  left: 139px;
+  top: 5px;
+}
+
+#bar {
+  left: 127px;
+  top: -1px;
+  width: 2px;
+  height: 20px;
+  font-size: 22px;
+  color: var(--title-description-color);
+}
+
+#product_container {
+  width: 1020px;
+  height: 958px;
+}
+.product_box {
+  border: solid 1px var(--img-box-color);
+  float: left;
+  position: relative;
+  margin: 0px 16px 16px 0px;
+  transition: border 0.3s;
+}
+.purchase_btn {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  padding: 0;
+  color: var(--btn-color);
+  background-color: var(--btn-background-color);
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  transition: background-color 0.3s;
+}
+svg {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.product_box:nth-child(2),
+.product_box:nth-child(6),
+.product_box:nth-child(9) {
+  margin-right: 0px;
+}
+
+.product_box_large {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px 20px 28px;
+}
+.product_box_small {
+  width: 243px;
+  height: 310px;
+  padding: 14px 22px 14px 21px;
+}
+
+.product_box:hover {
+  border: solid 1px var(--active-color);
+}
+.product_box:hover .purchase_btn {
+  width: 112px;
+  background-color: var(--active-color);
+}
+
+.product_box:hover .purchase_btn::before {
+  content: "구매하기";
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+.product_box:focus-within {
+  border: solid 1px var(--active-color);
+}
+.product_box:focus-within .purchase_btn {
+  width: 112px;
+  background-color: var(--active-color);
+}
+.product_box:focus-within .purchase_btn::before {
+  content: "구매하기";
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}

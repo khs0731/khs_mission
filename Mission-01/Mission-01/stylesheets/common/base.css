@@ -1,0 +1,26 @@
+/* Base 스타일 작성 */
+
+* {
+  box-sizing: border-box;
+}
+#today_discovery {
+  font-size: 24px;
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  line-height: 115%;
+  color: var(--title-color);
+}
+#today_discovery_discription {
+  font-size: 16px;
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  line-height: 115%;
+  color: var(--title-description-color);
+}
+
+.purchase_btn {
+  font-size: 14px;
+  line-height: 120%;
+  font-family: Noto Sans KR;
+  font-weight: 400;
+}
