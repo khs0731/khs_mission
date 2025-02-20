@@ -33,7 +33,6 @@ section {
   width: 1022px;
   height: 354px;
   margin-top: 48px;
-  border: solid 1px violet;
 }
 
 #today_shopping_header {
@@ -68,7 +67,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
+  position: relative;
+
   gap: 12px;
 }
 .product_img {
@@ -78,14 +78,24 @@ h2 {
 }
 .today_shopping_item_description {
   width: 172px;
-  border: solid 1px red;
 }
 .product_name {
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 12px;
+  color: var(--color-black);
 }
-.delivery {
+.delivery_free {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  line-height: 115%;
+  margin-bottom: 4px;
+}
+.delivery_rocket {
+  width: 55px;
+  height: 16px;
+  margin-bottom: 4px;
 }
 
 .star_rating {
@@ -93,7 +103,15 @@ h2 {
   width: 68px;
   height: 12px;
   display: inline-block;
-  background-position-y: 24px;
+}
+.star_5 {
+  background-position-y: 11px;
+}
+.star_45 {
+  background-position-y: 25px;
+}
+.star_4 {
+  background-position-y: 40px;
 }
 .review_number {
   color: var(--color-gray-700);
@@ -107,4 +125,13 @@ h2 {
   height: 30px;
   color: var(--color-white);
   background-color: var(--color-red-500);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
