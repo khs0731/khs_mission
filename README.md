@@ -1,3 +1,0 @@
-# khs_mission
-
-ffff
