@@ -2,14 +2,7 @@
 * {
   box-sizing: border-box;
 }
-/* @keyframes slide {
-  from {
-    background-image: url('../../assets/slides/houseware-downy.jpg');
-  }
-  to {
-    background-image: url('../../assets/slides/houseware-dandruff.jpg');
-  }
-} */
+
 body {
   width: fit-content;
   margin: 0 auto;
@@ -25,20 +18,34 @@ body {
 .houseware_side {
   width: 174px;
 }
-.houseware_side .houseware_title {
+.houseware_title {
   margin: 48px 0px 8px 24px;
   font-size: calc(var(--base-size) * 2.4);
   font-weight: var(--weight-medium);
   color: var(--color-brown-300);
 }
-.houseware_title + a {
+.houseware_link {
   display: inline-block;
   padding-left: 24px;
   font-size: calc(var(--base-size) * 1.4);
   font-weight: var(--weight-bold);
   color: var(--color-gray-700);
+  position: relative;
 }
-a + h3 {
+
+.houseware_link::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: -10px;
+  width: 6px;
+  height: 10px;
+
+  background-image: url('../../assets/icon/angle-right-default.svg');
+  background-repeat: no-repeat;
+}
+
+.hot_keyword {
   margin: 248px 0px 20px 24px;
   font-size: calc(var(--base-size) * 1.8);
   font-weight: var(--weight-medium);
@@ -56,10 +63,54 @@ a + h3 {
   color: var(--color-brown-300);
 }
 
-.carousel {
+.carousel_container {
   width: 320px;
   height: 631px;
-  /* animation: slide 4s infinite alternate; */
+  overflow: hidden;
+}
+
+.carousel_slide {
+  display: flex;
+  animation: slide 4s infinite alternate ease-in-out;
+}
+.slide_item {
+  position: relative;
+}
+.slide_txt_box {
+  position: absolute;
+  left: 30px;
+  bottom: 58px;
+  width: 260px;
+  height: 90px;
+  background-color: var(--color-brown-300);
+  color: var(--color-white);
+}
+.slide_txt_title {
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: calc(var(--base-size) * 1.8);
+  font-weight: var(--weight-bold);
+}
+.slide_txt_content {
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: calc(var(--base-size) * 1.4);
+  font-weight: var(--weight-regular);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .item_container {
