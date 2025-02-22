@@ -8,23 +8,61 @@ body {
   margin: 0 auto;
 }
 
-.houseware_container {
+.coupang_logo {
+  margin: 0px;
+  margin-top: 100px;
+  width: fit-content;
+}
+
+.hot_trend {
+  margin: 0;
+  margin-top: 48px;
+  font-size: calc(var(--base-size) * 1.6);
+  font-weight: var(--weight-medium);
+}
+.category,
+.category_blue {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: calc(var(--base-size) * 2.4);
+  font-weight: var(--weight-bold);
+}
+.category_blue {
+  color: var(--color-blue-600);
+  margin-left: 10px;
+}
+
+.houseware_container,
+.kitchenware_container {
   display: flex;
+  margin-bottom: 24px;
   width: 1022px;
   height: 634px;
   border-top: 1px solid var(--color-brown-300);
   border-bottom: 1px solid var(--color-brown-300);
 }
-.houseware_side {
+.kitchenware_container {
+  border-color: var(--color-green-700);
+}
+
+.houseware_side,
+.kitchenware_side {
   width: 174px;
 }
-.houseware_title {
+
+.houseware_title,
+.kitchenware_title {
   margin: 48px 0px 8px 24px;
   font-size: calc(var(--base-size) * 2.4);
   font-weight: var(--weight-medium);
   color: var(--color-brown-300);
 }
-.houseware_link {
+.kitchenware_title {
+  color: var(--color-green-700);
+}
+
+.houseware_link,
+.kitchenware_link {
   display: inline-block;
   padding-left: 24px;
   font-size: calc(var(--base-size) * 1.4);
@@ -33,7 +71,8 @@ body {
   position: relative;
 }
 
-.houseware_link::after {
+.houseware_link::after,
+.kitchenware_link::after {
   content: '';
   position: absolute;
   top: 4px;
@@ -52,7 +91,8 @@ body {
   color: var(--color-black);
 }
 
-.keyword_daily_necessities {
+.keyword_houseware,
+.keyword_kitchenware {
   display: inline-block;
   margin: 0px 0px 12px 24px;
   border: solid 1px var(--color-gray-400);
@@ -63,18 +103,19 @@ body {
   color: var(--color-brown-300);
 }
 
-.carousel_container {
+.keyword_kitchenware {
+  color: var(--color-green-700);
+}
+
+.slide {
+  display: flex;
   width: 320px;
   height: 631px;
   overflow: hidden;
 }
-
-.carousel_slide {
-  display: flex;
-  animation: slide 4s infinite alternate ease-in-out;
-}
 .slide_item {
   position: relative;
+  animation: slide 5s infinite alternate ease-in-out;
 }
 .slide_txt_box {
   position: absolute;
@@ -84,6 +125,17 @@ body {
   height: 90px;
   background-color: var(--color-brown-300);
   color: var(--color-white);
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.color_change {
+  background-color: var(--color-green-700);
 }
 .slide_txt_title {
   position: absolute;
@@ -103,14 +155,16 @@ body {
   font-size: calc(var(--base-size) * 1.4);
   font-weight: var(--weight-regular);
 }
+.indicator_1,
+.indicator_2 {
+  position: absolute;
+  top: 597px;
+  left: 144px;
+}
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.indicator_1 svg:first-child,
+.indicator_2 svg:first-child {
+  margin-right: 8px;
 }
 
 .item_container {
@@ -122,6 +176,42 @@ body {
   width: 512px;
 }
 .item_box {
+  position: relative;
   width: 160px;
   height: 300px;
+}
+.item_name {
+  margin: 12px 4px;
+  font-size: calc(var(--base-size) * 1.4);
+  font-weight: var(--weight-regular);
+}
+
+.item_price {
+  position: relative;
+  display: inline;
+  font-size: calc(var(--base-size) * 1.8);
+  font-weight: var(--weight-bold);
+}
+.won {
+  display: inline;
+  font-size: calc(var(--base-size) * 1.4);
+  font-weight: var(--weight-regular);
+}
+.rocket_delivery {
+  position: absolute;
+  top: 6.5px;
+  margin-left: 6px;
+}
+.discount {
+  margin-bottom: 4px;
+  font-size: calc(var(--base-size) * 1.4);
+  font-weight: var(--weight-regular);
+  color: var(--color-red-500);
+}
+
+.item_container:nth-child(3)::after {
+  width: 700px;
+  height: 50px;
+  background-color: aquamarine;
+  z-index: 50;
 }
