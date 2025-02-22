@@ -1,1 +1,76 @@
 /* 카테고리별 추천 광고상품 */
+* {
+  box-sizing: border-box;
+}
+/* @keyframes slide {
+  from {
+    background-image: url('../../assets/slides/houseware-downy.jpg');
+  }
+  to {
+    background-image: url('../../assets/slides/houseware-dandruff.jpg');
+  }
+} */
+body {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.houseware_container {
+  display: flex;
+  width: 1022px;
+  height: 634px;
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+}
+.houseware_side {
+  width: 174px;
+}
+.houseware_side .houseware_title {
+  margin: 48px 0px 8px 24px;
+  font-size: calc(var(--base-size) * 2.4);
+  font-weight: var(--weight-medium);
+  color: var(--color-brown-300);
+}
+.houseware_title + a {
+  display: inline-block;
+  padding-left: 24px;
+  font-size: calc(var(--base-size) * 1.4);
+  font-weight: var(--weight-bold);
+  color: var(--color-gray-700);
+}
+a + h3 {
+  margin: 248px 0px 20px 24px;
+  font-size: calc(var(--base-size) * 1.8);
+  font-weight: var(--weight-medium);
+  color: var(--color-black);
+}
+
+.keyword_daily_necessities {
+  display: inline-block;
+  margin: 0px 0px 12px 24px;
+  border: solid 1px var(--color-gray-400);
+  padding: 6px 10px;
+  height: 26px;
+  font-size: calc(var(--base-size) * 1.2);
+  font-weight: var(--weight-regular);
+  color: var(--color-brown-300);
+}
+
+.carousel {
+  width: 320px;
+  height: 631px;
+  /* animation: slide 4s infinite alternate; */
+}
+
+.item_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  width: 512px;
+}
+.item_box {
+  width: 160px;
+  height: 300px;
+}
