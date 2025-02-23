@@ -1,0 +1,109 @@
+/* 오늘의 쇼핑 제안 */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  width: fit-content;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+h2 {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 2.4rem;
+  font-weight: var(--weight-medium);
+  color: var(--color-black);
+
+  background-image: url('../../assets/icon/shopping.svg');
+  background-repeat: no-repeat;
+}
+.coupang_link {
+  display: block;
+  width: 100%;
+}
+.coupang_logo {
+  width: 176px;
+  height: 40px;
+}
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1020px;
+  height: 270px;
+  list-style-type: none;
+}
+.product {
+  position: relative;
+  width: 200px;
+  height: 270px;
+}
+.discount {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 3px 10px;
+  width: 53px;
+  height: 30px;
+
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  line-height: 150%;
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+}
+.product__img {
+  margin: 14px 20px 12px 20px;
+}
+.product__info {
+  width: 172px;
+  height: fit-content;
+  margin: 0 14px;
+}
+.product__name,
+.product__delivery,
+.product__reveiw {
+  font-size: 1.4rem;
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+}
+.product__name {
+  margin-bottom: 12px;
+}
+.product__delivery {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-gray-700);
+  font-weight: var(--weight-medium);
+}
+
+.product__reveiw {
+  display: inline-block;
+  color: var(--color-gray-700);
+}
+.product__star {
+  display: inline-block;
+  width: 68px;
+  height: 12px;
+  background: no-repeat url('../../assets/sprites/rating-stars.png');
+}
+
+.star_5 {
+  background-position-y: -140px;
+}
+.star_4_5 {
+  background-position-y: -126px;
+}
+.star_4 {
+  background-position-y: -112px;
+}

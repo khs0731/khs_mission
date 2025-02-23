@@ -7,10 +7,11 @@ body {
   margin: 0 auto;
   width: fit-content;
   height: 100vh;
-  margin-top: 100px;
 }
 h1 {
+  display: inline-block;
   margin: 0;
+  margin-top: 100px;
   margin-bottom: 56px;
 }
 a {
@@ -30,8 +31,8 @@ h2 {
   font-size: 2.4rem;
   font-weight: var(--wight-medium);
   line-height: 115%;
-  color: var(--color-balck);
   vertical-align: middle;
+  color: var(--color-balck);
 }
 span {
   position: relative;
@@ -49,14 +50,14 @@ p {
   font-size: 1.6rem;
   font-weight: var(--wight-medium);
   line-height: 115%;
-  color: var(--color-gray-600);
   vertical-align: middle;
+  color: var(--color-gray-600);
 }
 ul {
   margin: 0;
   margin-top: 24px;
-  padding: 0;
   width: 1020px;
+  padding: 0;
   list-style-type: none;
 }
 li {
@@ -68,6 +69,8 @@ li {
   padding: 14px 22px 14px 21px;
   width: 243px;
   height: 310px;
+
+  transition: 0.5s border-color;
 }
 .large {
   padding: 20px 28px;
@@ -88,6 +91,8 @@ li:nth-child(9) {
   height: 42px;
   background: url('../../assets/icon/angle-right-square.svg')
     var(--color-opacity-20) right no-repeat;
+
+  transition: 1s background-color;
 }
 
 li:hover,
@@ -102,10 +107,10 @@ li:focus-within .btn {
 li:hover .btn::before,
 li:focus-within .btn::before {
   position: relative;
+  top: 12px;
+  left: 20px;
   content: '구매하기';
   font-size: 1.4rem;
   line-height: 120%;
   color: var(--color-white);
-  top: 12px;
-  left: 20px;
 }
