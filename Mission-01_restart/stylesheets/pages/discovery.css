@@ -1,1 +1,111 @@
-/* CSS 작성 */
+/* CSS 작성*/
+html {
+  font-size: var(--base-size);
+  font-family: var(--font-family);
+}
+body {
+  margin: 0 auto;
+  width: fit-content;
+  height: 100vh;
+  margin-top: 100px;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 56px;
+}
+a {
+  display: block;
+  width: fit-content;
+}
+h1 a img {
+  display: block;
+  width: 176px;
+  height: 40px;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 2.4rem;
+  font-weight: var(--wight-medium);
+  line-height: 115%;
+  color: var(--color-balck);
+  vertical-align: middle;
+}
+span {
+  position: relative;
+  top: -1px;
+  margin: 0 5px;
+  font-size: 1.6rem;
+  font-weight: 900;
+  vertical-align: middle;
+  color: var(--color-gray-600);
+}
+p {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 1.6rem;
+  font-weight: var(--wight-medium);
+  line-height: 115%;
+  color: var(--color-gray-600);
+  vertical-align: middle;
+}
+ul {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  width: 1020px;
+  list-style-type: none;
+}
+li {
+  position: relative;
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border: solid 1px var(--color-gray-500);
+  padding: 14px 22px 14px 21px;
+  width: 243px;
+  height: 310px;
+}
+.large {
+  padding: 20px 28px;
+  width: 502px;
+  height: 310px;
+}
+li:nth-child(2),
+li:nth-child(6),
+li:nth-child(9) {
+  margin-right: 0px;
+}
+
+.btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 42px;
+  height: 42px;
+  background: url('../../assets/icon/angle-right-square.svg')
+    var(--color-opacity-20) right no-repeat;
+}
+
+li:hover,
+li:focus-within {
+  border-color: var(--color-blue-600);
+}
+li:hover .btn,
+li:focus-within .btn {
+  width: 112px;
+  background-color: var(--color-blue-600);
+}
+li:hover .btn::before,
+li:focus-within .btn::before {
+  position: relative;
+  content: '구매하기';
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: var(--color-white);
+  top: 12px;
+  left: 20px;
+}

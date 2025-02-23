@@ -1,1 +1,18 @@
 /* Base 스타일 작성 */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --base-size: 10px;
+  --font-family: 'Noto Sans Kr', 'sans-serif';
+
+  --weight-thin: 100;
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+}
