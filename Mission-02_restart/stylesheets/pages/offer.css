@@ -6,6 +6,11 @@ body {
   margin: 0 auto;
   width: fit-content;
 }
+a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
 h1,
 h2,
 h3,
