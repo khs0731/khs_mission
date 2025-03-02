@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>헤더 - 쿠팡(Coupang)</title>
-    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="icon" href="./assets/favicon/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./stylesheets/main.css" />
-    <script src="/js/main.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
 
   <body>
@@ -39,12 +39,22 @@
       <button class="button--category">카테고리</button>
 
       <form action="/" class="search-bar">
-        <select name="select" id="select">
-          <option disabled hidden selected>전체</option>
-          <option value="opt-1">opt-1</option>
-          <option value="opt-2">opt-2</option>
-        </select>
-
+        <div class="select-container">
+          <select name="select" id="select">
+            <option disabled hidden selected>전체</option>
+            <option value="opt-1">opt-1</option>
+            <option value="opt-2">opt-2</option>
+          </select>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M24 17H15L19.6957 23L24 17Z" fill="#767676" />
+          </svg>
+        </div>
         <input type="search" placeholder="찾고 싶은 상품을 검색해 보세요!" />
         <button aria-label="음성검색 버튼" class="mic"></button>
         <button aria-label="키워드검색 버튼" class="search"></button>
@@ -80,7 +90,8 @@
         </li>
         <li>
           <a href="/">
-            <img src="./assets/icon/new.svg" alt="new 아이콘" /> 2022년 설날
+            2022년 설날
+            <img src="./assets/icon/new.svg" alt="new 아이콘" />
           </a>
         </li>
         <li><a href="">로켓직구</a></li>

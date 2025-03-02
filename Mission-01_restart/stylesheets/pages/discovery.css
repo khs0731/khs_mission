@@ -114,3 +114,7 @@ li:focus-within .btn::before {
   line-height: 120%;
   color: var(--color-white);
 }
+
+li a {
+  outline: none;
+}
