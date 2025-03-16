@@ -4,7 +4,6 @@
 body {
   margin: 0 auto;
   width: 192rem;
-  height: 10.2rem;
   font-size: 1.2rem;
   font-weight: var(--weight-regular);
 }
@@ -58,6 +57,7 @@ a {
   border-radius: 3px;
   box-shadow: 0 0 0 1px var(--color-red-500);
 }
+
 /* ---------------------------------------------- */
 /* 내비게이션                                        */
 /* ---------------------------------------------- */
@@ -72,52 +72,83 @@ a {
   white-space: nowrap;
   border: 0;
 }
-i {
-  margin-right: 0.4rem;
-  font-size: 2rem;
-}
 .navigation {
+  display: none;
+}
+.navigation.is--active {
+  display: block;
+  margin: 0 auto;
   width: 102rem;
   height: 52rem;
-  margin: 0 auto;
+}
+.navigation__list ul {
+  display: none;
+}
+.navigation__list.is--active {
+  display: block;
 }
 .navigation__inner {
   width: 54rem;
   height: 50rem;
   box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.3);
 }
+i {
+  margin-right: 0.4rem;
+  font-size: 2rem;
+}
 
-.navigation__list {
+.depth1,
+.depth2,
+.depth3 {
   position: relative;
-  top: 1rem;
-  left: 0.5rem;
   display: flex;
   flex-direction: column;
   width: 18rem;
   height: 50rem;
+  padding: 1rem 0.5rem;
 }
-.navigation__list li {
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
+.depth1 > li,
+.depth2 > li,
+.depth3 > li {
   width: 17rem;
   height: 3rem;
+  padding-left: 2rem;
 }
 .depth2,
 .depth3 {
-  /* display: none; */
   position: absolute;
-  top: 0rem;
   left: 18rem;
+  top: 0;
+
+  color: initial;
+  font-weight: initial;
 }
-.depth2::before {
+
+.depth1 > li:hover,
+.depth2 > li:hover,
+.depth1 > li:focus-within,
+.depth2 > li:focus-within {
+  font-weight: var(--weight-bold);
+  color: var(--color-blue-600);
+  background: url('../../assets/icon/more-right-active.svg') no-repeat right;
+}
+.depth3 > li:hover,
+.depth3 > li:focus-within {
+  font-weight: var(--weight-bold);
+  color: var(--color-blue-600);
+}
+.navigation__list > li > a {
+  outline: none;
+}
+.depth2::before,
+.depth3::before {
   content: '';
   display: block;
   position: absolute;
   width: 100%;
-  height: 99%; /* 높이를 100%로 설정 */
-  box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.3),
-    5px 0 5px -5px rgba(0, 0, 0, 0.3);
+  height: 99%;
+  box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 /* ---------------------------------------------- */
 /* 메인 콘텐츠                                       */
@@ -146,7 +177,11 @@ i {
   width: 100%;
   background-color: var(--color-gray-200);
 }
-.footer-links li {
+.footer-links > li {
+  display: flex;
+  align-items: center;
+}
+.footer-links > li > a {
   margin: 0.5rem 1.4rem;
 }
 .personal {

@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>내비게이션 및 푸터 - 쿠팡(Coupang)</title>
-    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="icon" href="./assets/favicon/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
 
     <script type="module" src="./js/main.js"></script>
   </head>
@@ -47,42 +47,72 @@
       <h2 class="hidden">카테고리별 상품 목록</h2>
       <div class="navigation__inner">
         <!-- 카테고리별 내비게이션(메뉴) 영역 -->
-        <ul class="navigation__list depth1 is-active">
-          <li class="depth1-item">
-            <a href="/" role="button"
+        <ul class="navigation__list depth1">
+          <li>
+            <a href="#" role="button"
               ><i class="icon-clothes"></i>패션의류/잡화</a
             >
 
             <ul class="navigation__list depth2">
-              <li class="depth2-item">
-                <a href="/" role="button">여성패션</a>
+              <li>
+                <a href="#" role="button">여성패션</a>
                 <ul class="navigation__list depth3">
-                  <li class="depth3-item"><a href="/">의류</a></li>
-                  <li class="depth3-item">
+                  <li><a href="/">의류</a></li>
+                  <li>
                     <a href="/">속옷/잠옷</a>
                   </li>
-                  <li class="depth3-item"><a href="/">신발</a></li>
+                  <li><a href="/">신발</a></li>
                 </ul>
               </li>
-              <li class="depth2-item">남성패션</li>
-              <li class="depth2-item">유아동패션</li>
+              <li><a href="#" role="button">남성패션</a></li>
+              <li><a href="#" role="button">유아동패션</a></li>
             </ul>
           </li>
-          <li class="depth1-item"><i class="icon-beauty"></i>뷰티</li>
-          <li class="depth1-item"><i class="icon-baby"></i>출산유아동</li>
-          <li class="depth1-item"><i class="icon-foods"></i>식품</li>
-          <li class="depth1-item"><i class="icon-kitchenware"></i>주방용품</li>
-          <li class="depth1-item"><i class="icon-houseware"></i>생활용품</li>
-          <li class="depth1-item"><i class="icon-interior"></i>홈인테리어</li>
-          <li class="depth1-item"><i class="icon-appliances"></i>가전디지털</li>
-          <li class="depth1-item"><i class="icon-sports"></i>스포츠</li>
-          <li class="depth1-item"><i class="icon-car"></i>자동차용품</li>
-          <li class="depth1-item"><i class="icon-book"></i>도서음반</li>
-          <li class="depth1-item"><i class="icon-toy"></i>완구취미</li>
-          <li class="depth1-item"><i class="icon-stationery"></i>문구오피스</li>
-          <li class="depth1-item"><i class="icon-pet"></i>반려동물</li>
-          <li class="depth1-item"><i class="icon-travel"></i>여행티켓</li>
-          <li class="depth1-item"><i class="icon-theme"></i>테마관</li>
+          <li>
+            <a href="#"><i class="icon-beauty"></i>뷰티</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-baby"></i>출산유아동</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-foods"></i>식품</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-kitchenware"></i>주방용품</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-houseware"></i>생활용품</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-interior"></i>홈인테리어</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-appliances"></i>가전디지털</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-sports"></i>스포츠</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-car"></i>자동차용품</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-book"></i>도서음반</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-toy"></i>완구취미</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-stationery"></i>문구오피스</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-pet"></i>반려동물</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-travel"></i>여행티켓</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon-theme"></i>테마관</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -96,30 +126,51 @@
       <!-- 푸터 영역 -->
       <!-- 푸터 관련 콘텐츠는 .footer 영역 안에 마크업 해주세요. -->
       <ul class="footer-links">
-        <li><a href="">인재채용</a></li>
-        <span aria-hidden="true" class="divider">|</span>
-        <li><a href="">입점/제휴문의</a></li>
-        <span aria-hidden="true" class="divider">|</span>
-        <li><a href="">공지사항</a></li>
-        <span aria-hidden="true" class="divider">|</span>
-        <li><a href="">고객의 소리</a></li>
-        <span aria-hidden="true" class="divider">|</span>
+        <li>
+          <a href="">인재채용</a>
+          <span aria-hidden="true" class="divider">|</span>
+        </li>
+
+        <li>
+          <a href="">입점/제휴문의 </a>
+          <span aria-hidden="true" class="divider">|</span>
+        </li>
+
+        <li>
+          <a href="">공지사항</a>
+          <span aria-hidden="true" class="divider">|</span>
+        </li>
+
+        <li>
+          <a href="">고객의 소리</a>
+          <span aria-hidden="true" class="divider">|</span>
+        </li>
+
         <li class="personal">
           <a href=""> 개인정보 처리방침 </a>
+          <span aria-hidden="true" class="divider">|</span>
         </li>
-        <span aria-hidden="true" class="divider">|</span>
+
         <li>
           <a href=""> 쿠팡페이 이용약관 </a>
+          <span aria-hidden="true" class="divider">|</span>
         </li>
-        <span aria-hidden="true" class="divider">|</span>
+
         <li class="personal">
           <a href=""> 쿠팡페이 개인정보 처리방침 </a>
+          <span aria-hidden="true" class="divider">|</span>
         </li>
-        <span aria-hidden="true" class="divider">|</span>
-        <li><a href="">신뢰관리센터</a></li>
-        <span aria-hidden="true" class="divider">|</span>
-        <li><a href="">제휴마케팅</a></li>
-        <span aria-hidden="true" class="divider">|</span>
+
+        <li>
+          <a href="">신뢰관리센터</a>
+          <span aria-hidden="true" class="divider">|</span>
+        </li>
+
+        <li>
+          <a href="">제휴마케팅</a>
+          <span aria-hidden="true" class="divider">|</span>
+        </li>
+
         <li><a href="">광고안내</a></li>
       </ul>
       <div class="footer-info">
@@ -159,15 +210,24 @@
 Copyright ⓒ Coupang Corp. 2010-2020 All Right Reserved.
         </pre>
         <div class="icon-cotainer">
-          <a href="https://www.facebook.com/"
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img src="./assets/icon/sns-facebook.svg" alt="페이스북 링크"
           /></a>
-          <a href="https://section.blog.naver.com/"
+          <a
+            href="https://section.blog.naver.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="./assets/icon/sns-naver-blog.svg"
               alt="네이버 블로그 링크"
           /></a>
-          <a href="https://www.instagram.com/"
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="./assets/icon/sns-instagram.svg"
               alt="인스타그램 링크"

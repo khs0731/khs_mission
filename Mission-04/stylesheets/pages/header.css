@@ -9,6 +9,7 @@ body {
   font-size: 1.2rem;
   font-weight: var(--weight-regular);
   color: var(--color-black);
+  border-bottom: 0.1rem var(--color-gray-100) solid;
 }
 
 a {
@@ -32,9 +33,9 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 0.8rem;
-  padding: 0 0.8rem;
-  width: 1020px;
-  height: 34px;
+  padding: 0 45rem;
+  width: 192rem;
+  height: 3.4rem;
   background-color: var(--color-gray-100);
 }
 
@@ -48,7 +49,9 @@ button {
   display: grid;
   grid-template-columns: repeat(5, min-content);
   grid-template-rows: repeat(2, auto);
-  border-bottom: 0.1rem var(--color-gray-100) solid;
+  margin: 0 auto;
+  width: 102rem;
+  height: 11.6rem;
 }
 
 h1 {
@@ -75,11 +78,11 @@ h1 {
 
 form {
   display: flex;
-  margin-top: 34px;
-  margin-left: 30px;
-  width: 516px;
-  height: 40px;
-  border: 1px solid var(--color-blue-600);
+  margin-top: 3.4rem;
+  margin-left: 3rem;
+  width: 51.6rem;
+  height: 4rem;
+  border: 0.1rem solid var(--color-blue-600);
 }
 
 .select-container {
@@ -105,33 +108,33 @@ input[type='search'] {
   flex-grow: 1;
   border: 0;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 1rem;
   color: var(--color-gray-600);
 }
 .mic {
-  width: 40px;
+  width: 4rem;
   background: url('../../assets/icon/mic.svg') no-repeat center;
 }
 .search {
-  width: 40px;
+  width: 4rem;
   background: url('../../assets/icon/search.svg') no-repeat center;
 }
 .myCoupang {
   position: relative;
 }
 .myCoupang button {
-  margin-top: 29px;
-  margin-left: 44px;
-  padding-top: 40px;
-  width: 45px;
-  height: 58px;
-  background: url('../../assets/icon/my-coupang.svg') no-repeat center 5px;
+  margin-top: 2.9rem;
+  margin-left: 4.4rem;
+  padding-top: 4rem;
+  width: 4.5rem;
+  height: 5.8rem;
+  background: url('../../assets/icon/my-coupang.svg') no-repeat center 0.5rem;
 }
 .myCoupang-list {
   display: none;
   position: absolute;
-  margin-top: 11px;
-  margin-left: 44px;
+  margin-top: 1.1rem;
+  margin-left: 4.4rem;
   z-index: 10;
 }
 .myCoupang.is--active .myCoupang-list {
@@ -139,33 +142,33 @@ input[type='search'] {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transform: translateX(-23px);
-  gap: 20px;
-  width: 90px;
-  height: 137px;
-  border: solid 1px var(--color-gray-300);
+  transform: translateX(-2.3rem);
+  gap: 2rem;
+  width: 9rem;
+  height: 13.7rem;
+  border: solid 0.1rem var(--color-gray-300);
 }
 .cart {
   position: relative;
 }
 .cart button {
-  margin-top: 29px;
-  margin-left: 14px;
-  padding-top: 40px;
-  width: 45px;
-  height: 58px;
-  background: url('../../assets/icon/cart.svg') no-repeat center 5px;
+  margin-top: 2.9rem;
+  margin-left: 1.4rem;
+  padding-top: 4rem;
+  width: 4.5rem;
+  height: 5.8rem;
+  background: url('../../assets/icon/cart.svg') no-repeat center 0.5rem;
 }
 .cart_num {
   position: absolute;
-  top: 30px;
-  right: 0px;
+  top: 3rem;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   color: var(--color-white);
 }
 .cart_massage {
@@ -178,23 +181,22 @@ input[type='search'] {
 .cart--empty .cart_massage {
   display: flex;
   position: absolute;
-  right: 6px;
-  margin-top: 11px;
+  right: 0.6rem;
+  margin-top: 1.1rem;
   justify-content: center;
   align-items: center;
-  width: 288px;
-  height: 99px;
+  width: 28.8rem;
+  height: 9.9rem;
 
-  border: solid 1px var(--color-gray-300);
-  background-color: var(--color-white);
+  border: solid 0.1rem var(--color-gray-300);
 }
 
 .menu-bar {
-  margin-bottom: 6px;
-  margin-left: 36px;
+  margin-bottom: 0.6rem;
+  margin-left: 3.6rem;
   grid-column: 2/-1;
 }
 .menu-bar li {
   display: inline-block;
-  padding: 6px 14px;
+  padding: 0.6rem 1.4rem;
 }

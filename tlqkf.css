@@ -1,0 +1,90 @@
+/* 기본 내비게이션 스타일 */
+.navigation__inner {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  position: relative;
+}
+
+.navigation__link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* 마우스 hover 시 배경색 변경 */
+.navigation__link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 2depth와 3depth 숨기기 (기본 상태) */
+.navigation__list > .navigation__item > .navigation__list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 2depth, 3depth가 is--active 상태일 때 보이기 */
+.navigation__item.is--active > .navigation__list {
+  display: block;
+}
+
+.navigation__link:focus,
+.navigation__item.is--active > .navigation__link {
+  background-color: #007bff;
+  color: white;
+  outline: none;
+}
+
+/* 3depth 메뉴의 스타일 */
+.navigation__item > .navigation__list > .navigation__item > .navigation__link {
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 3depth hover 효과 */
+.navigation__item
+  > .navigation__list
+  > .navigation__item
+  > .navigation__link:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* 3depth가 활성화된 상태 */
+.navigation__item
+  > .navigation__list
+  > .navigation__item.is--active
+  > .navigation__link {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* 내비게이션 메뉴 포커스 스타일 */
+.navigation__link:focus {
+  background-color: #007bff;
+  color: white;
+  outline: none;
+}
+
+/* 메뉴 항목이 활성화될 때 텍스트 강조 */
+.navigation__item.is--active > .navigation__link {
+  font-weight: bold;
+}
